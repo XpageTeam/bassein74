@@ -4,6 +4,8 @@ $output-bourbon-deprecation-warnings: false
 @import "base"
 @import "functions"
 
+
+
 .bassein-title
 	font-size: 2.125rem
 	margin-bottom: 50px
@@ -1034,6 +1036,7 @@ body.start
 	&__info_adress_info
 		font-size: 16px
 		color: rgba(14, 14, 14, 0.5)
+
 	&__slider
 		display: flex
 		padding-top: 70px
@@ -1595,35 +1598,42 @@ body.start
 		display: flex
 		justify-content: space-between
 		width: 100%
+
+
 	&__right_slider
-		// height: calc((100vw - 400px)/ 3)
 		margin-top: 50px
 		margin-bottom: 70px
 		position: relative
-		.slick-slide
-			 height: calc((100vw - 400px)/ 3)
-			 max-height: 400px
-		.slick-prev
 
-			right: 120px
-		.slick-next
-			right: 50px
-			transform: rotate(180deg)
-		.slick-arrow
-			position: absolute
-			+size(48px)
-			border: 0
-			bottom: 50px
-			// background-color: #f9fafa
-			background: url(../img/card-arrow-slide.svg) #f9fafa 46% center no-repeat
-			z-index: 1
-			border-radius: 24px
+		.slick
+			&-slide
+				height: calc((100vw - 400px)/ 3)
+				max-height: 400px
+
+			&-prev
+				left: -60px
+
+			&-next
+				transform: rotate(180deg)
+				right: -60px
+
+			&-arrow
+				position: absolute
+				+size(50px)
+				border: 0
+				bottom: calc(50% - 20px)
+				background: url("../img/card-arrow-slide.svg") #f9fafa 46% center no-repeat
+				z-index: 1
+				border-radius: 50%
+				border: 1px solid #0ca8d4
+
 	&__right_slide
-		// height: 400px
+
 		img
 			object-fit: contain
 			height: 100%
 			width: 100%
+
 	&__right_title
 		a
 			color: #0e0e0e
@@ -1632,6 +1642,7 @@ body.start
 			position: relative
 			margin-left: 10px
 			align-self: flex-start
+
 			&:before
 				content: ""
 				position: absolute
@@ -1640,28 +1651,35 @@ body.start
 				background: url(../img/doc-2.png) no-repeat center
 				width: 22px
 				height: 22px
+
 	&__table
 		width: 100%
 		margin-top: 20px
+
 		thead
 			tr
 				height: 90px
 				background-color: #f9fafa
+
 		tbody
 			tr
 				height: 50px
 				&:nth-child(2n)
 					background-color: #f9fafa
+
 		th, td
 			vertical-align: middle
 			text-align: left
 			padding-left: 30px
+
 	table
 		p
 			margin-bottom: 0
 
-// card------------------------END
-// product---------------------
+.works-detail
+	iframe
+		width: 100% !important
+
 .product-
 	p
 		letter-spacing: 0.2
@@ -1673,50 +1691,46 @@ body.start
 	h3
 		font-size: 34px
 		color: #000
-	.catalog-__banner
-		// height: 240px
+
 	.catalog-__banner_text
 		min-height: 240px
 		padding-left: 20px
 		padding-right: 20px
+
 	&__slider
-		// height: calc((100vw - 400px)/ 3)
 		margin-top: 50px
 		margin-bottom: 35px
 		position: relative
-		// max-width: 1440px
-		// margin-left: auto
-		// margin-right: auto
-		.slick-slide
-			// height: calc((100vw)/ 3)
-			height: calc(70vw)
-			max-height: 90vh
-			// &:before
-			// 	content: ""
-			// 	position: absolute
-			// 	width: 100%
-			// 	height: 100%
-			// 	background-color: red
-			// 	z-index: -1
-		.slick-prev
 
-			right: 140px
-		.slick-next
-			right: 70px
-			transform: rotate(180deg)
-		.slick-arrow
-			position: absolute
-			+size(48px)
-			border: 0
-			bottom: 70px
-			background: url(../img/card-arrow-slide.svg) #f9fafa 46% center no-repeat
-			z-index: 1
-			border-radius: 24px
+		.slick
+			&-slide
+				height: calc(70vw)
+				max-height: 90vh
+
+			&-prev
+				left: -60px
+
+			&-next
+				right: -60px
+				transform: rotate(180deg)
+
+			&-arrow
+				position: absolute
+				+size(50px)
+				border: 0
+				bottom: calc(50% - 25px)
+				background: url("../img/card-arrow-slide.svg") #f9fafa 46% center no-repeat
+				z-index: 1
+				border-radius: 24px
+				border: 1px solid #0ca8d4
+
 	&__slide
+
 		img
 			object-fit: cover
 			height: 100%
 			width: 100%
+
 	&__slider_nav
 		margin: 0 -15px
 		margin-bottom: vw(95)

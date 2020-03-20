@@ -145,6 +145,16 @@ $output-bourbon-deprecation-warnings: false
 
 
 @media screen and (max-width: 1500px)
+
+	.product-__slider
+		.slick
+			&-prev
+				left: 20px
+
+			&-next
+				right: 20px
+
+
 	.head__phone
 		margin-left: vw(50)
 		font-size: rem(26)
@@ -166,6 +176,16 @@ $output-bourbon-deprecation-warnings: false
 
 		.basseins-__capabil h2
 			margin-bottom: 45px
+
+	.card-__right_slider 
+		.slick
+			&-prev
+				left: 20px
+
+			&-next
+				right: 20px
+
+
 
 @media screen and (max-width: 1400px)
 
@@ -368,20 +388,10 @@ $output-bourbon-deprecation-warnings: false
 			.wrapper
 				box-sizing: border-box
 
-
-
-
-
-
-
-
-
-
-
-
 	.catalog-__banner_text
 		h1
 			font-size: 5vw
+
 	.page-composite-pools
 		.head
 			padding-top: 20px
@@ -501,16 +511,10 @@ $output-bourbon-deprecation-warnings: false
 	.product-
 		h2
 			font-size: 45px
+
 		&__slide_nav
 			width: calc((100%)/5) 
 			height: calc((77vw )/5)
-		&__slider
-			.slick-arrow
-				bottom: 30px
-			.slick-prev
-				right: 110px
-			.slick-next
-				right: 30px
 
 		&__table_shadow
 			margin-bottom: 40px
@@ -645,6 +649,9 @@ $output-bourbon-deprecation-warnings: false
 		display: none
 
 @media screen and (max-width: 667px)
+
+	.works-detail .card-__right_slider .slick-arrow
+		bottom: -60px
 
 	.page-composite-pools .basseins-__capabil h2, .bassein-title
 		font-size: 1.6rem
@@ -887,6 +894,9 @@ $output-bourbon-deprecation-warnings: false
 				padding: 0 20px
 				justify-content: center
 	.product-
+		&__slider
+			margin-bottom: 70px
+			
 		&__slide_nav
 			width: calc((100%)/3) !important
 			height: calc((66vw )/3) !important
@@ -904,13 +914,16 @@ $output-bourbon-deprecation-warnings: false
 				padding: 0 40px
 				text-align: center
 		&__slider
-			.slick-arrow
-				top: calc(50% - 24px)
-			.slick-prev
-				left: 5px
-			.slick-next
-				right: 5px
-				left: inherit
+
+			.slick
+				&-arrow
+					bottom: -60px
+
+				&-prev
+					left: 5px
+
+				&-next
+					right: 5px
 
 
 
