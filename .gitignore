@@ -1,0 +1,6 @@
+node_modules/
+accesses/
+dist/
+app/files/
+*.zip
+*.rar

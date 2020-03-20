@@ -1,0 +1,132 @@
+html
+	head
+		meta(charset="utf-8")
+		title Карточка товара
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			#content.long_menu
+				include inc/header.jade
+				.catalog-.card-
+					.catalog-__banner
+						img(src="img/photos/catalog-banner.jpg", alt="")
+						.catalog-__banner_text
+							div
+								h1 Лестницы
+								.title-block__crumbs
+									.bread-crumbs
+										a.bread-crumbs__link(href='#') Главная
+										span.bread-crumbs__line
+										a.bread-crumbs__link(href='#') Оборудование
+										span.bread-crumbs__line
+										span.bread-crumbs__this Лестницы и поручни
+					.wrapper
+						.catalog-__content
+							.catalog-__left
+								.catalog-__left_item
+									.catalog-__left_title Лестницы и поручни
+									ul.catalog-__left_list
+										li
+											a(href="#") Лестницы
+										li
+											a(href="#") Лестницы для наземных бассейнов
+										li
+											a(href="#") Поручни для входа
+										li
+											a(href="#") Доступ к бассейну - аксессуары
+										li
+											a(href="#") Лестницы для инвалидов
+										li
+											a(href="#") Доступ к бассейну - поручни и аксессуары
+										li
+											a(href="#") Кронштейны для поручней
+								.catalog-__left_item
+									each name in ["Насосы", "Закладные элементы", "Фильтрация", "Дозирование, автоматизация, измерение", "Освещение бассейнов", "Водные эффекты", "Комплексные устройства", "Души", "Покрывала и роллеры", "Средства по уходу за водой", "Оборудование для очистки", "Горки и трамплины", "ПВХ трубы и аксессуары", "Окружающее бассейн оборудование", "Оборудование для спортивных бассейнов",]
+										.catalog-__left_title=name
+										ul.catalog-__left_list
+											li
+												a(href="#") пункт_1
+											li
+												a(href="#") пункт_2
+											li
+												a(href="#") пункт_3
+							.catalog-__right
+								.card-__right_title
+									h2 Лестницы ELEGANCE
+									a(href="#") Скачать каталог
+								.card-__right_content
+									p Бренд: AstralPool
+									p Производитель: Fluidra (Испания)
+									p Элегантные лестницы со ступеньками и вертикальными стойками для легкого входа в воду. Изготовлены из нержавеющей стали AISI 316 с 2 анкерами. У этих лестниц есть двойная ступенька из нескользящего материала для дополнительной безопасности и комфорта. Есть лестницы с 3 или 4 ступеньками. Лестницы серии Signature доступны с или без IPE деревянным покрытием. Стилизованная версия лестницы с деревянным покрытием IPE является прекрасным дополнением для другой продукции серии Pluvium. Дерево высокого качества, прочное, приятное на ощупь. Обе модели имеют 3-летнюю гарантию.
+									.card-__right_slider
+										.card-__right_slide
+											a(href="img/photos/card-img.jpg" data-fancybox="card-__slide-1").fancybox
+												img(src="img/photos/card-img.jpg", alt="")
+										.card-__right_slide
+											a(href="img/photos/catalog-banner.jpg" data-fancybox="card-__slide-1").fancybox
+												img(src="img/photos/catalog-banner.jpg", alt="")
+										.card-__right_slide
+											a(href="img/photos/advantage-bg.jpg" data-fancybox="card-__slide-1").fancybox
+												img(src="img/photos/advantage-bg.jpg", alt="")
+									h2 Дополнительная информация
+									table.card-__table
+										tfoot
+										thead
+											tr
+												th Код
+												th Стандартная<br>упаковка
+												th Стандартный<br>вес, кг
+												th Стандартный<br>объем, м3
+												th
+										tbody
+											tr
+												td(data-title="Код") 
+													span 45782
+												td(data-title="Стандартная упаковка")
+													span 1
+												td(data-title="Стандартный вес, кг")
+													span 6.651
+												td(data-title="Стандартный объем, м3")
+													span 0.109
+												td(data-title="") 
+													span Лестницы с 3 ступеньками
+											tr
+												td(data-title="Код") 
+													span 45782
+												td(data-title="Стандартная упаковка")
+													span 1
+												td(data-title="Стандартный вес, кг")
+													span 6.651
+												td(data-title="Стандартный объем, м3")
+													span 0.109
+												td(data-title="") 
+													span Лестницы с 3 ступеньками
+											tr
+												td(data-title="Код") 
+													span 45782
+												td(data-title="Стандартная упаковка")
+													span 1
+												td(data-title="Стандартный вес, кг")
+													span 6.651
+												td(data-title="Стандартный объем, м3")
+													span 0.109
+												td(data-title="") 
+													span Лестницы с 3 ступеньками
+											tr
+												td(data-title="Код") 
+													span 45782
+												td(data-title="Стандартная упаковка")
+													span 1
+												td(data-title="Стандартный вес, кг")
+													span 6.651
+												td(data-title="Стандартный объем, м3")
+													span 0.109
+												td(data-title="") 
+													span Лестницы с 3 ступеньками
+
+			include inc/footer.jade
+		include inc/scripts.jade
+
+
+

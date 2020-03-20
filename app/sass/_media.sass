@@ -1,0 +1,1219 @@
+$output-bourbon-deprecation-warnings: false
+@import "bourbon"
+@import "vars"
+
+@media screen and (max-width: 700px)
+	.head__phone
+		display: none !important
+
+@media screen and (min-width: 1350px)
+	.product-__sample_block
+
+		.wrapper
+			position: relative
+
+		&_items
+			max-width: 800px
+
+		&_imgs
+			position: static
+
+		&_img
+			width: calc(100% - 820px - 245px)
+			right: 245px
+			bottom: -85px
+			height: 332px
+			box-shadow: 0 0 12px 1px rgba(#000, .4)
+
+			img
+				display: block
+				height: calc(100% - 46px)
+
+			div
+				margin-top: 0
+				background: #fff
+				padding: 15px
+
+@media screen and (min-width: 1350px) and (max-width: 1500px)
+	.product-__sample_block
+
+		&_img
+			width: calc(100% - 820px - 11.5%)
+			right: 11.5%
+
+@media screen and (min-width: 1800px)
+	.page-composite-pools
+		.content__logo
+				&:before
+					left: 45px
+@media screen and (min-width: 1500px)
+	.catalog-__banner_text
+		min-height: 20vh
+
+	.page-composite-pools 
+		.product-__bottom_block
+			padding-bottom: 70px
+			padding-top: 70px
+			margin-top: 70px
+			margin-bottom: 0
+
+		.product-__info_block 
+			padding: 70px 0
+
+
+@media screen and (max-width: 1800px)
+	// .small_logo
+	// 	.head
+	// 		padding: 20px 2rem 0 calc(2rem - 15px)
+
+	.small_logo
+		.head
+			padding: 100px 50px 0
+		.basseins-__banner
+			.wrapper
+				text-align: center
+
+		.content__logo
+			img
+				left: 50px
+
+
+
+
+@media screen and (min-width: 1000px)
+	.contacts-
+		&__container_right
+			transform: translate3d(0,-100%, 0)
+			transition: 0.5s ease-out
+		&__container_right.start
+			transform: translate3d(0, 0, 0)
+
+	// .admin
+	.page-composite-pools
+
+		.bassein-banner-item
+			&[name="riverina"]
+				&:hover 
+					.basseins-__slider-img
+						background: url('../img/riverina-w.svg') no-repeat center
+						background-size: contain
+						img
+							opacity: 0
+			&[name="x-trainer"]
+				&:hover 
+					.basseins-__slider-img
+						background: url('../img/x-trainer-w.svg') no-repeat center
+						background-size: contain
+						img
+							opacity: 0
+			&[name="briliant"]
+				&:hover 
+					.basseins-__slider-img
+						background: url('../img/briliant-w.svg') no-repeat center
+						background-size: contain
+						img
+							opacity: 0
+			&[name="java"]
+				&:hover 
+					.basseins-__slider-img
+						background: url('../img/java-w.svg') no-repeat center
+						background-size: contain
+						img
+							opacity: 0
+			&[name="aqua"]
+				&:hover 
+					.basseins-__slider-img
+						background: url('../img/aqua-w.png') no-repeat center
+						background-size: contain
+						img
+							opacity: 0
+
+
+
+@media screen and (max-width: 1600px)
+
+	.page-composite-pools 
+		.product-__info_block
+			margin-top: 60px
+			padding: 50px 0
+
+			+ .product-__info_block
+				margin-top: 0
+
+		.product-__banner_block
+			padding: 70px 0
+
+
+@media screen and (max-width: 1500px)
+	.head__phone
+		margin-left: vw(50)
+		font-size: rem(26)
+
+	.header-composite__cont
+		padding-top: 25px
+
+	.basseins__intro-title, .basseins__intro h1, .basseins__intro h2
+		font-size: 2.375rem
+
+	.cont--grey
+		padding-top: 50px
+
+		.basseins__intro
+			margin-bottom: 40px
+
+		.basseins-__capabil
+			padding-top: 30px
+
+		.basseins-__capabil h2
+			margin-bottom: 45px
+
+@media screen and (max-width: 1400px)
+
+	.head__phone
+		margin-right: 25px
+
+	.page-composite-pools 
+		.product-__bottom_block
+			padding-bottom: 50px
+			padding-top: 50px
+			margin-top: 50px
+			margin-bottom: 0
+
+		.product-__info_block 
+			padding: 50px 0
+
+		.product-__info_block 
+			margin-top: 0
+
+		.product-__banner_block
+			padding: 50px 0
+
+	.basseins__advantages .basseins-__capabil_item
+		margin: 0 0 60px 30px
+
+
+@media screen and (max-width: 1300px)
+
+	.head
+		padding: 10.40583vh 50px 0 40px
+
+	.inner
+		.head
+			padding: 50px 50px 0 50px 
+
+
+	.content
+		padding: 0 180px 0 40px
+
+@media screen and (max-width: 1279px)
+	.head
+		.menu-__block_btn
+			position: absolute
+			top: calc(100% + 25px)
+			left: 40px
+
+@media screen and (max-width: 1200px)
+
+	.page-portfolio .portfolio-banner__title
+		font-size: 2rem
+
+
+
+
+	.product-__banner_block
+		min-height: auto
+
+
+	.page-composite-pools 
+		.product-__bottom_block 
+			margin-bottom: -66px
+
+			h2
+				font-size: 2.6rem
+
+		.product-__banner_block h2 
+			font-size: 2.6rem
+			margin: 20px 0
+
+
+
+
+	.title-block__title
+		font-size: 2.3rem
+
+	.header-composite
+
+		.menu-__block_btn, .header-composite__phone
+			display: none
+
+
+
+	.nav
+		display: none
+
+	
+	.page-composite-pools
+		.content__logo
+			margin-right: auto !important
+
+	.header-composite__phone
+		margin-right: 20px !important
+
+	.basseins- h1
+		font-size: 37px
+
+	.small_logo .basseins-__banner img
+		width: 100%
+
+	.company-__right
+		li
+			line-height: 1.3
+			font-size: 14px
+	.content
+		&__title
+			font-size: 2.5vw
+	.works-
+		&__slider_nav
+			width: 460px
+		&__slider_nav_slide
+			&:before
+				right: 30px
+		&__info_container
+			width: calc(100% - 460px)
+	.contacts-
+		&__container_left_adress_block
+			flex-direction: column
+	.catalog-
+		&__left
+			width: 300px
+		&__right
+			width: calc(100% - 300px)
+
+
+@media screen and (max-width: 1000px)
+
+	.footer__soc
+		display: none
+		
+
+
+	.page-portfolio .portfolio-banner img
+		height: 400px
+		object-fit: cover
+		object-position: center
+
+	
+	.page-composite-pools
+
+		.bassein-banner-item
+				&:hover 
+					.basseins-__slider-img
+						background: none !important
+						img
+							opacity: 1 !important
+				
+
+	.head
+		.menu-__block_btn
+			position: static
+
+	.basseins__intro
+		&-title
+			margin-bottom: 15px
+
+		.btn
+			margin-top: 25px
+
+
+	.header-composite__cont
+		padding-top: 0
+
+	.basseins__intro-title, .basseins__intro h1, .basseins__intro h2
+		font-size: 2rem
+
+	.basseins__advantages .basseins-__capabil_item
+		width: calc((100% - 30px * 3) / 3)
+		margin: 0 0 45px 30px
+
+	.basseins__advantages
+		margin: 0 0 0px -30px !important
+
+	.page-composite-pools
+		.basseins-__banners.pools-banners .basseins-__slider_title
+			padding: 1.4rem
+
+		.basseins-__banners.pools-banners .basseins-__slider-img
+			align-items: flex-start
+
+		.basseins-__banners.pools-banners .bassein-banner-item
+			height: 225px
+		.basseins-__banners
+			.basseins-__banner
+				display: none !important
+
+		.basseins-__banners.pools-banners .bassein-banner-item:nth-child(odd):hover + .bassein-banner-item .basseins-__slider_title
+			display: flex !important
+
+		.basseins-__banners.pools-banners .bassein-banner-item:nth-child(odd):hover .basseins-__slider_title
+			background: #fff
+
+		.basseins-__banners.pools-banners .bassein-banner-item:hover .basseins-__slider_title
+			h2,  p
+				color: #000
+
+		.basseins-__banners.pools-banners .bassein-banner-item:nth-child(even):hover .basseins-__slider_title
+			background: #fff
+
+		.basseins-__title
+			.wrapper
+				box-sizing: border-box
+
+
+
+
+
+
+
+
+
+
+
+
+	.catalog-__banner_text
+		h1
+			font-size: 5vw
+	.page-composite-pools
+		.head
+			padding-top: 20px
+		.content__logo
+				&:before
+					top: 12px
+					// left: 100px
+					left: 30px
+	.page-composite-pools-inner
+		.content__logo
+				&:before
+					// top: 70px
+					top: 20px
+					left: 40px
+	.head
+		padding-top: 20px
+		padding: 20px 40px 0
+	.menu-
+		&__block
+			padding: 100px 40px
+			align-items: center
+		&__block_left, &__block_right
+			max-height: 400px
+			height: calc(100% - 200px)
+			width: calc(50% - 40px)
+		&__block_left
+			margin-right: 80px
+	.content
+		padding: 0
+		display: flex
+		flex-direction: column
+		padding-top: 66px
+		justify-content: space-between
+		// height: 100vh
+		&__block
+			padding-left: 40px
+		&__title
+			font-size: 3.5vw
+		&__left
+			padding: 40px
+			width: 100%
+		&__right
+			width: 100%
+			// height: 100%
+		&__right_in
+			width: 100%
+			height: 100%
+			border-top: 1px solid #c5c9c8 !important
+		&__logo
+			margin-right: 40px
+			margin-top: 5px
+	.works-
+		&__slider_slide
+			a
+				width: calc(100% / 2)
+				&:nth-child(n + 3)
+					display: none
+		&__info
+			// width: 270px
+			flex-direction: column
+		&__info_container
+			width: 100%
+			justify-content: flex-start
+			padding-bottom: 40px
+			padding-right: 0
+		&__info_name
+			&:before
+				display: none
+		&__slider_nav
+			width: 100%
+			padding-left: 0
+		&__slider
+			.slick-slide
+				height: 26vw
+	.contacts-
+		&__container
+			flex-direction: column
+			justify-content: space-between
+		&__container_left
+			width: 100%
+			padding: 40px
+		&__container_right
+			width: 100%
+			height: 300px
+		&__container_left_adress_block
+			flex-direction: row
+		.content
+			flex-direction: row
+	.company-
+		&__left_partner
+			width: calc(100% / 2)
+		.content
+			padding-top: 0
+		&__left
+			padding-left: 40px
+			padding-top: 71px
+		&__right
+			height: 100vh
+			padding-top: 71px
+			li
+				font-size: 1.9vw
+		&__left_title
+			font-size: 4.2vw
+		&__right_blur
+			background: url(../img/photos/company-bg-white.jpg) right 0 top 0  no-repeat
+			background-size: cover
+	.advantage-
+		.content
+			padding-top: 0
+		&__left
+			width: 50%
+			padding-left: 40px
+			padding-top: 71px
+			padding-bottom: 70px
+		&__right
+			width: 50%
+	.product-
+		h2
+			font-size: 45px
+		&__slide_nav
+			width: calc((100%)/5) 
+			height: calc((77vw )/5)
+		&__slider
+			.slick-arrow
+				bottom: 30px
+			.slick-prev
+				right: 110px
+			.slick-next
+				right: 30px
+
+		&__table_shadow
+			margin-bottom: 40px
+		&__table_shadow.shadow
+			&:before
+				visibility: visible
+		&__table_shadow.shadow_left
+			&:after
+				visibility: visible
+		&__table_info
+			flex-direction: column
+		&__table_info_left
+			width: 100%
+		&__table_info_right
+			width: 100%
+			order: -1
+			margin-bottom: 40px
+		&__info_block_p1
+			flex-direction: column
+			margin-bottom: 40px
+			p
+				margin-bottom: 40px
+			div
+				width: 100%
+		&__info_block_p2_items
+			flex-wrap: wrap
+		&__info_block_p2_item
+			width: calc(100% / 2)
+			&:nth-child(odd)
+				padding-left: 0
+		&__sample_block_text
+			flex-direction: column
+			div
+				padding-right: 0
+				margin-bottom: 40px
+				width: 100%
+			p
+				width: 100%
+				max-width: none
+		&__sample_block_item
+			width: calc( 100% / 2)
+		&__bottom_block_container
+			flex-direction: column
+			div
+				width: 100%
+				padding-right: 0
+			p
+				max-width: none
+				margin-bottom: 30px
+			img
+				display: block
+				margin: 0 auto
+		&__banner_block
+			p
+				max-width: none
+	.small_logo
+		.head
+			padding: 13px 2rem 0 calc(2rem - 15px)
+		.basseins-__banner
+			img
+				width: 100%
+	.basseins-
+		&__title
+			flex-direction: column
+			> div
+				width: 100%
+				&:last-child
+					order: -1
+		&__banner
+			margin-bottom: 40px
+		&__slider
+			.slick-arrow
+				top: 30px
+			.slick-next
+				left: 30px
+		&__capabil_item
+			width: calc((100% - 2*45px)/2)
+		&__capabil_item_text
+			max-width: none
+			padding-right: 40px
+		&__capabil
+			margin-bottom: -17vw
+		&__bottom
+			margin-top: calc((-155px - 16vw))
+	.catalog-
+		&__content
+			flex-direction: column
+		&__left
+			width: 100%
+			padding-bottom: 20px
+			// border-bottom: 1px solid #000
+			// margin-bottom: 20px
+		&__right
+			width: 100%
+			padding-left: 0
+		&__right_item_img
+			width: calc((100vw - 3 * 40px)/3)
+			height: calc((100vw - 3*40px)/3)
+		.wrapper-flex
+			margin-left: -40px
+		&__left_title
+			padding-right: 30px
+		&__banner_text
+			padding: 100px 20px
+	.card-
+		&__right_slider
+			.slick-slide
+				height: calc(100vw / 3)
+	.works-detail
+		.card-__right_slider
+			.slick-arrow
+				bottom: 10px
+			.slick-next
+				right: 10px
+			.slick-prev
+				right: 80px
+	.small_logo
+		.content__logo
+			img
+				left: 32px
+
+	.works_new-
+		.content
+			padding-left: 40px 
+			padding-right: 40px
+			padding-top: 90px
+		&item
+			width: calc((100% - 30px * 2)/2)
+
+@media screen and (max-width: 700px)
+	.head__phone
+		display: none
+
+@media screen and (max-width: 667px)
+
+	.page-composite-pools .basseins-__capabil h2, .bassein-title
+		font-size: 1.6rem
+
+	.page-composite-pools .basseins__advantages .basseins-__capabil_item_title
+		text-align: center
+
+	.cont--grey .basseins-__capabil
+		padding-top: 0
+
+
+	.main 
+		.content
+			justify-content: flex-start
+
+	.inner .head
+		padding: 20px 20px 0
+
+
+	.head
+		.menu-__block_btn
+			display: none
+
+	.page-composite-pools
+		.basseins-__banner img
+			height: 400px
+
+		.product-__info_block_p1 
+			h3
+				font-size: 1.6rem
+				margin-bottom: 25px
+			h2 
+				margin-bottom: 20px
+
+		.product-__banner_block 
+			h2 
+				font-size: 1.6rem
+				margin-bottom: 20px
+
+			.p1 
+				margin-bottom: 35px
+
+			h3
+				font-size: 1.6rem
+
+		.basseins__intro
+			&-text
+				.text-page
+					margin-right: 0
+
+			&-title
+				font-size: 1.4rem
+
+		.basseins-__banner 
+			.basseins-__title 
+				.wrapper
+					margin-top: auto
+					margin-bottom: 3rem
+
+		.basseins__advantages
+			.basseins-__capabil_item_title
+				max-height: 100%
+				height: auto
+
+		.product-__bottom_block 
+			margin-bottom: 0
+
+		.product-__bottom_block 
+			padding-bottom: 35px
+			padding-top: 35px
+			margin-top: 40px
+
+		.product-__bottom_block h2
+			font-size: 2rem
+			margin-bottom: 25px
+
+
+
+
+
+
+
+	// .admin
+	.basseins-__top
+		height: 230px
+
+	.basseins-__banners.pools-banners
+		.bassein-banner-item
+			width: 100%
+			height: 245px
+
+		.basseins-__slider_title
+			padding: 1.4rem
+
+		.bassein-banner-item
+			overflow: hidden
+
+			&:hover .basseins-__banner
+				width: 100%
+
+
+	.page-composite-pools
+		.basseins-__banners.pools-banners
+			.bassein-banner-item
+				width: 100%
+
+		.basseins-__slider_title span:before
+			right: 23px
+
+	.btn
+		margin-top: 20px
+
+	.basseins__advantages .basseins-__capabil_item
+		width: 100%
+
+
+
+	.footer-
+		margin-top: 2rem
+	.page-composite-pools-inner
+		.content__logo
+				&:before
+					left: 20px
+	.head
+		padding: 20px 20px 0
+	.content
+		&__right_in
+			flex-direction: column
+		&__block
+			width: 100%
+			height: 25%
+			padding-left: 20px
+		&__title
+			font-size: 5vw
+		&__left
+			padding: 20px
+	.works-
+		.content
+			padding: 71px 20px 0
+		&__info_container
+			padding-top: 40px
+		&__slider_slide
+			img
+				padding-right: 0
+				width: 100%
+			a
+				width: 100%
+				margin: 0
+				&:nth-child(2)
+					display: none
+		&__slider
+			margin: 0
+			.slick-dots
+				padding: 20px
+			.slick-slide
+				height: 50vw
+			.slick-prev
+				margin-left: 0
+	.contacts-
+		&__container_left_adress_block
+			flex-direction: column
+		&__container_left
+			padding: 40px 20px 20px
+	.company-
+		.content
+			background: url(../img/photos/company-bg.png) right 0 bottom 0  no-repeat
+			background-size: cover
+		&__right_blur
+			background: rgba(255,255,255,0.20)
+			background-size: cover
+			filter: blur(0)
+		&__container
+			flex-direction: column
+		&__left
+			width: 100%
+			padding-top: 100px
+			padding-bottom: 40px
+			padding-left: 20px
+			padding-right: 20px
+		&__right
+			width: 100%
+			height: auto
+			padding: 40px
+			padding-left: 20px
+			padding-right: 20px
+			ul
+				justify-content: flex-start
+				// flex-direction: row
+				flex-wrap: wrap
+			li
+				// width: 50%
+				padding: 5px 0
+				padding-left: 20px
+				font-size: 16px
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					left: 2px
+					top: 11px
+					+size(8px)
+					border-radius: 4px
+					background-color: #fff
+				&:first-child
+					width: 100%
+					padding-left: 0
+					&:before
+						display: none
+		&__left_title_span
+			font-size: 6vw
+		&__left_title
+			margin-bottom: 20px
+			img
+				margin-left: 10px
+
+	.advantage-
+		background-size: 100% 100%
+		&__container
+			flex-direction: column
+		&__left
+			width: 100%
+			padding-left: 20px
+			padding-top: 110px
+			padding-bottom: 40px
+		&__right
+			width: 100%
+			border-left: 0
+			border-right: 0
+		&__left_title
+			margin-bottom: 20px
+		&__right_title
+			min-height: 40px
+			padding-left: 20px
+			padding-right: 20px
+		&__right_item
+			min-height: 90px
+			padding: 0 20px
+			&:last-child
+				min-height: 90px
+				padding: 0 20px
+				justify-content: center
+	.product-
+		&__slide_nav
+			width: calc((100%)/3) !important
+			height: calc((66vw )/3) !important
+		&__info_block_p2
+			h3
+				text-align: center
+		&__info_block_p2_item
+			width: 100%
+			padding-left: 0
+
+			div
+				justify-content: center
+			p
+				max-width: none
+				padding: 0 40px
+				text-align: center
+		&__slider
+			.slick-arrow
+				top: calc(50% - 24px)
+			.slick-prev
+				left: 5px
+			.slick-next
+				right: 5px
+				left: inherit
+
+
+
+	.basseins-
+		.wrapper.fixedattop
+			.basseins-__anchor
+				a
+					padding: 10px 0 15px
+		h1
+			font-size: 38px
+		&__anchor
+			flex-wrap: wrap
+			a
+				width: 50%
+				&:last-child:nth-child(odd)
+					width: 100%
+		&__capabil_item
+			width: 100%
+		&__capabil_item_text
+			padding-right: 0
+		&__title
+			.title-block__crumbs
+				margin-bottom: 20px
+		&__slider
+			.detail-img-button
+				left: 40px
+	.catalog-
+		&__right_item_img
+			width: calc((100vw - 2 * 40px)/2)
+			height: calc((100vw - 2*40px)/2)
+		.wrapper-flex
+			margin-left: -40px
+		&__right_item
+			width: calc((100% - 2*40px)/2)
+		&__banner
+			max-height: none
+			height: auto
+		&__banner_text
+			padding-top: 90px
+			padding-bottom: 20px
+			> div
+				overflow-x: hidden
+			h1
+				// font-size: 45px
+		.wr-bread-crumbs__link
+			&:not(:last-of-type)
+				display: none
+			&:first-child
+				position: relative
+				&:after
+					content: ""
+					position: absolute
+					background-color: rgba(255, 255, 255, 0.5)
+					height: 1px
+					width: 13px
+					left: -20px
+					top: 10px
+				&:before
+					content: ""
+					position: absolute
+					+size(7px)
+					border-left: 1px solid rgba(255, 255, 255, 0.5)
+					border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+					top: 7px
+					left: -20px
+					transform: rotate(45deg)
+		.bread-crumbs__line
+			display: none
+			&:nth-last-child(4)
+				display: block
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					+size(7px)
+					border-left: 1px solid rgba(255, 255, 255, 0.5)
+					border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+					top: -3px
+					transform: rotate(45deg)
+
+		.bread-crumbs__this
+			display: none
+	.card-
+		&__right_slider
+			.slick-slide
+				height: calc(100vw / 2)
+		&__right_title
+			flex-direction: column
+			a
+				margin-left: 0
+				margin-bottom: 30px
+	.menu-
+		&__block
+			align-items: flex-start
+			padding-top: 120px
+		&__block_right, &__block_left
+			height: 100%
+	.footer-
+		&__block
+			min-height: 120px
+			padding: 10px 0
+	.works_new-
+		.content
+			padding-top: 90px
+@media screen and (max-width: 480px)
+	.forms__input_error ~ .forms__error-message
+		width: 162px
+	.forms__error-message
+		bottom: 42px !important
+	.menu-__block_text
+		position: absolute
+		bottom: 10px
+		left: calc(50% - 60px)
+	.forms__error-message-icon:after, .forms__error-message-icon:before
+		left: calc(50% - 0px) !important
+	.small_logo.page-composite-pools
+		.content__logo
+			&:before
+				left: 15px
+	.main
+		.content__right
+			position: fixed
+			bottom: 0
+		.content
+			min-height: 1px
+	.wrapper
+		padding: 0 15px
+	body
+		.forms
+			width: 100%
+			margin: 0
+			height: 100%
+	.catalog-
+		&__right_item_img
+			width: 100%
+			height: calc(100vw - 60px)
+			max-height: inherit
+		.wrapper-flex
+			margin-left: 0
+			width: 100%
+		&__right_item
+			margin-left: 0
+			width: 100%
+		&__banner_text
+			h1
+				// font-size: 35px
+	.product-
+		h2
+			font-size: 28px
+		h3
+			font-size: 20px
+		.catalog-__banner, &__table_info
+			margin-bottom: 50px
+		&__size_block
+			margin: 50px 0
+		&__info_block, &__banner_block , &__sample_block
+			padding: 50px 0
+		&__bottom_block
+			padding-top: 50px
+		&__sample_block_item
+			width: 100%
+		&__slider_nav
+			display: none
+		&__slider
+			.slick-slide
+				// height: 240px
+				height: 70vw
+	.footer-
+		&__block
+			flex-direction: column
+			justify-content: space-around
+	.basseins-
+		&__slider
+			.detail-img-button
+				left: 20px
+				top: 20px
+		&__slider_title
+			// flex-direction: column
+			// align-items: flex-start
+			a
+				&:first-child
+					margin-bottom: 20px
+			span
+				width: auto
+				padding: 0 20px 0 10px
+				&:before
+					right: 5px
+				&:hover
+					&:before
+						transform: translateX(0px)
+		&__capabil
+			padding-bottom: 115px
+		&__bottom
+			min-height: 215px
+		&__sliders
+			p
+				font-size: 14px
+		&__slider
+			.slick-next
+				left: 5px
+				top: calc( 50% - 24px)
+	.card-
+		&__right_slider
+			.slick-slide
+				height: calc(100vw)
+	.menu-
+		&__block_btn
+			padding: 5px 10px 7px 10px
+			min-width: 129px
+			font-size: 14px
+			text-align: center
+			margin-bottom: 0
+		&__block
+			padding: 100px 20px 40px 20px
+		&__block_left
+			width: 50%
+			margin-right: 10px
+		&__block_right
+			width: 50%
+		&__block li
+			a:hover, a:active
+				letter-spacing: normal !important
+		&__block li.active
+			a
+				letter-spacing: normal !important
+	.small_logo
+		.content__logo
+			img
+				left: 15px
+	.menu
+		.menu__text
+			display: none
+	// mobile menu-------------
+	// .content__logo
+	// 	z-index: 0
+	// .menu-
+	// 	&__block
+	// 		flex-direction: column
+	// 		padding: 100px 10px 20px
+	// 		display: block
+	// 	&__block_left
+	// 		width: 100%
+	// 		margin-right: 0
+	// 		height: auto
+	// 		max-height: none
+	// 	&__block_right
+	// 		width: 100%
+	// 		margin-right: 0
+	// 		margin-top: 40px
+	// 		height: auto
+	// 		max-height: none
+	// 	&__block_text
+	// 		// position: absolute
+	// 		// bottom: 10px
+	// 	&__block_contacts
+	// 		margin-top: 40px
+
+	// menu style var 2
+	.menu-
+		&__block
+			// padding: 100px 10px 20px
+		&__block_left
+			ul
+				font-size: 15px
+		&__block_right
+			padding-left: 15px
+			ul
+				font-size: 15px
+	.works_new-
+		&container
+			margin: 0
+		&item
+			width: 100%
+			margin: 0 0 30px
+@media screen and (max-width: 400px)
+	#coating-java
+		.product-__roll_block_top
+			right: 6px
+			height: 42vw
+		.product-__roll_block_bot
+			background-size: contain !important
+@media screen and (max-width: 380px)
+	.product-
+		&__roll_block_bot
+			// background: url(../img/photos/product-scroll-bot.png) no-repeat
+			background-size: 100% 100% !important
+	#coating-briliant .product-__roll_block_top
+		right: 5px
+@media screen and (max-width: 340px)
+	.contact__form
+		.recaptcha
+			display: flex
+			justify-content: center
+
+@media screen and (max-width: 800px)
+	.footer-__block
+		min-height: 0
+		padding: 20px 0
+		flex-direction: column
+		align-items: center
+		text-align: center
+
+		> *
+
+			&:not(:first-child)
+				margin: 14px 0 0

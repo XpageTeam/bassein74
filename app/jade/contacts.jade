@@ -1,0 +1,42 @@
+html
+	head
+		meta(charset="utf-8")
+		title Контакты
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			#content
+				include inc/header.jade
+				.contacts-
+					.content
+						.contacts-__container
+							.contacts-__container_left
+								.contacts-__container_left_title Контакты
+
+								.contacts-__container_left_adress 
+									.contacts-__container_left_adress_title Адрес офиса:
+									.contacts-__container_left_adress_info г. Челябинск, пос. Шершни, ул. Покровская, 10, офис 6
+
+								.contacts-__container_left_adress 
+									.contacts-__container_left_adress_title Адрес склада:
+									.contacts-__container_left_adress_info г. Челябинск, пос. Шершни, ул. Покровская, 10
+
+								.contacts-__container_left_adress_block
+									.contacts-__container_left_adress
+										.contacts-__container_left_adress_title График работы:
+										.contacts-__container_left_adress_info пн–пт 10:00—18:00
+									.contacts-__container_left_adress
+										.contacts-__container_left_adress_title Телефоны:
+										a(href="tel: +7-351-220-77-87").contacts-__container_left_adress_info +7 (351) 220-77-87
+									.contacts-__container_left_adress
+										.contacts-__container_left_adress_title Электронная почта: 
+										a(href="mailto: info@bassein74.ru").contacts-__container_left_adress_info info@bassein74.ru
+							.contacts-__container_right
+								img(src="img/photos/map-pic.jpg", alt="")
+
+							
+
+					
+			//- include inc/footer.jade
+		include inc/scripts.jade

@@ -1,0 +1,38 @@
+html
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.jade
+		include inc/css.jade
+	body.main
+		#app
+		#demo
+		#page-wr.main_bg
+			.main__slider
+				.main__slide
+					img(src="img/photos/bg-main.jpg", alt="")
+				.main__slide
+					img(src="img/photos/basseins-slide-1.jpg", alt="")
+			#content
+				include inc/header.jade
+				.content
+					.content__left
+						.content__title Строительство современных многофункциональных бассейнов и СПА
+					.content__right
+						a(href="#").content__block.bt_0.btn_2
+							.content__block_title Бассейны бетонные
+							.content__block_btn Подробнее
+						a(href="#").content__block.bt_0
+							.content__block_title Оборудование
+							.content__block_btn Подробнее
+						a(href="#").content__block.bb_0
+							.content__block_title Бассейны композитные
+							.content__block_btn Подробнее
+						a(href="#").content__block.bb_0
+							.content__block_title Сервис
+							.content__block_btn Подробнее
+
+
+					
+			//- include inc/footer.jade
+		include inc/scripts.jade

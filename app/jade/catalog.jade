@@ -1,0 +1,95 @@
+html
+	head
+		meta(charset="utf-8")
+		title Каталог
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			#content.long_menu
+				include inc/header.jade
+				.catalog-
+					.catalog-__banner
+						img(src="img/photos/catalog-banner.jpg", alt="")
+						.catalog-__banner_text
+							div
+								h1 Лестницы и поручни
+								.title-block__crumbs
+									.bread-crumbs
+										a.bread-crumbs__link(href='#') Главная
+										span.bread-crumbs__line
+										a.bread-crumbs__link(href='#') Оборудование
+										span.bread-crumbs__line
+										span.bread-crumbs__this Лестницы и поручни
+					.wrapper
+						.catalog-__content
+							.catalog-__left
+								.catalog-__left_item
+									.catalog-__left_title Лестницы и поручни
+									ul.catalog-__left_list
+										li
+											a(href="#") Лестницы
+										li
+											a(href="#") Лестницы для наземных бассейнов
+										li
+											a(href="#") Поручни для входа
+										li
+											a(href="#") Доступ к бассейну - аксессуары
+										li
+											a(href="#") Лестницы для инвалидов
+										li
+											a(href="#") Доступ к бассейну - поручни и аксессуары
+										li
+											a(href="#") Кронштейны для поручней
+								.catalog-__left_item
+									each name in ["Насосы", "Закладные элементы", "Фильтрация", "Дозирование, автоматизация, измерение", "Освещение бассейнов", "Водные эффекты", "Комплексные устройства", "Души", "Покрывала и роллеры", "Средства по уходу за водой", "Оборудование для очистки", "Горки и трамплины", "ПВХ трубы и аксессуары", "Окружающее бассейн оборудование", "Оборудование для спортивных бассейнов",]
+										.catalog-__left_title=name
+										ul.catalog-__left_list
+											li
+												a(href="#") пункт_1
+											li
+												a(href="#") пункт_2
+											li
+												a(href="#") пункт_3
+							.catalog-__right
+								//- item 1
+								a(href="#").catalog-__right_item
+									.catalog-__right_item_img
+										img(src="img/photos/catalog-item-1.png", alt="")
+									.catalog-__right_item_name Лестницы
+								//- item 2
+								a(href="#").catalog-__right_item
+									.catalog-__right_item_img
+										img(src="img/photos/catalog-item-2.png", alt="")
+									.catalog-__right_item_name Лестницы для наземных бассейнов
+								//- item 3
+								a(href="#").catalog-__right_item
+									.catalog-__right_item_img
+										img(src="img/photos/catalog-item-3.png", alt="")
+									.catalog-__right_item_name Поручни для входа
+								//- item 4
+								a(href="#").catalog-__right_item
+									.catalog-__right_item_img
+										img(src="img/photos/catalog-item-4.png", alt="")
+									.catalog-__right_item_name Доступ к бассейну - аксессуары
+								//- item 5
+								a(href="#").catalog-__right_item
+									.catalog-__right_item_img
+										img(src="img/photos/catalog-item-5.png", alt="")
+									.catalog-__right_item_name Лестницы для инвалидов
+								//- item 6
+								a(href="#").catalog-__right_item
+									.catalog-__right_item_img
+										img(src="img/photos/catalog-item-6.png", alt="")
+									.catalog-__right_item_name Доступ к бассейну - поручни и аксессуары
+								//- item 7
+								a(href="#").catalog-__right_item
+									.catalog-__right_item_img
+										img(src="img/photos/catalog-item-7.png", alt="")
+									.catalog-__right_item_name Кронштейны для поручней
+
+			include inc/footer.jade
+		include inc/scripts.jade
+
+
+
