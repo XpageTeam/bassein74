@@ -1,0 +1,294 @@
+.sauna
+	&-cont
+		max-width: 1920px
+		margin: 0 auto
+
+		.text-page
+			font-size: 16px
+			line-height: 24px
+
+.sauna-title
+	font-size: rem(54)
+	line-height: 65px
+	text-transform: uppercase
+	margin-bottom: 30px
+
+.sauna-top
+	display: flex
+	justify-content: space-between
+
+	&-cont
+		position: relative
+		padding-top: 100px
+
+
+
+
+	&__info
+		max-width: 585px
+		margin-right: 30px
+
+.sauna-photos
+
+	&--right
+		position: absolute
+		right: 0
+		top: 0
+
+	&--left
+		position: relative
+		margin: 100px 50px 0 auto
+		z-index: 1
+		
+.sauna-history
+	display: flex
+
+	&-cont
+		position: relative
+		padding: 200px 0
+
+	&__img
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translate3d(0,-50%,0)
+
+	&__info
+		max-width: 900px
+		margin-left: auto
+
+	.text-page
+		column-count: 2
+		gap: 50px
+
+.sauna-standart
+
+	.sauna-title
+		margin-bottom: 80px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 0 0 -120px -45px
+		counter-reset: i
+
+	
+
+	&__item
+		width: calc((100% - 45px * 3) / 3)
+		margin: 0 0 120px 45px
+		counter-increment: i
+		font-size: 16px
+		line-height: 24px
+		color: #000
+
+
+		&-img
+			margin-bottom: 25px
+			
+			img
+				display: block
+		
+		&-title
+			position: relative
+			border-bottom: 1px solid #7D7D7D
+			padding: 0 0 15px 0
+
+			&::after
+				content: ''
+				display: block
+				width: 6px
+				height: 6px
+				transform: rotate(45deg)
+				border-top: 1px solid #000
+				border-right: 1px solid #000
+				position: absolute
+				top: 6px
+				right: 0
+
+			
+
+			&:before
+				content: '0' counter(i)
+				margin-right: 40px
+				font-size: 14px
+				opacity: 0.5
+
+		&-text 
+			margin-top: 15px
+
+
+.sauna-processing
+	display: flex
+
+	&-cont
+		position: relative
+		margin: 160px 0 220px
+
+	&__info
+		max-width: 730px
+
+	&__img
+		position: absolute
+		top: 0 
+		right: 0
+
+.sauna-colors__text 
+	margin-bottom: 50px
+
+.saune-light
+	&-cont
+		margin: 110px 0
+
+	.sauna-title
+		text-align: right
+
+	&__list
+		display: flex
+		justify-content: space-between
+
+	&__item
+
+		&-img
+			margin-bottom: 30px
+
+		&:first-child
+			width: 40%
+			flex: none
+			margin-right: 53px
+
+
+.sauna-elements
+	&-cont
+		margin: 90px 0
+
+	&__text 
+		margin-top: 30px
+
+@media (max-width: 1600px)
+
+	.sauna-history__info
+		max-width: 770px
+
+	.sauna-processing__info
+		max-width: 680px
+
+@media (max-width: 1500px)
+
+	.sauna-history__img
+		position: static
+		transform: none
+		margin-right: 30px
+
+	.sauna-processing__img
+		position: static
+		margin-left: 20px
+
+	.sauna-title
+		font-size: 2.5rem
+		line-height: 50px
+
+	.sauna-history-cont
+		padding: 50px 0
+
+	.sauna-top-cont
+		padding-top: 0
+
+	.sauna-standart .sauna-title
+		margin-bottom: 40px
+
+	.sauna-standart
+		&__list
+			margin: 0 0 -45px -45px
+
+		&__item
+			margin: 0 0 45px 45px
+
+	.sauna-processing-cont, .sauna-elements-cont, .saune-light-cont
+		margin: 70px 0
+
+@media (max-width: 1200px)
+
+	.sauna-photos--right
+		position: static
+
+	.sauna-photos--left 
+		margin: 40px 0px 0 auto
+
+	.sauna-title
+		font-size: 2rem
+		line-height: 40px
+		margin-bottom: 15px
+
+	.sauna-top__sticky
+		position: sticky
+		top: 10px
+
+	.sauna-history__img
+		margin-right: 25px
+		max-width: 400px
+
+	.sauna-history .text-page
+		column-count: 1
+
+@media (max-width: 1000px)
+
+	.sauna-standart__item
+		width: calc((100% - 45px * 2) / 2)
+
+	.sauna-standart__item-title:before
+		margin-right: 20px
+
+	.sauna-title
+		font-size: 1.7rem
+		line-height: 35px
+
+	.saune-light__item:first-child
+		width: 40%
+		margin-right: 20px
+
+@media (max-width: 667px)
+
+	.sauna-top
+		flex-direction: column
+
+		&__info
+			margin: 0 0 30px 0
+
+	.sauna-history
+		flex-direction: column
+
+		&__img
+			margin: 0 0 25px 0
+			max-width: 400px
+
+	.sauna-standart__item
+		width: calc((100% - 45px * 1) / 1)
+
+	.sauna-title
+		font-size: 1.4rem
+
+	.sauna-standart .sauna-title
+		margin-bottom: 15px
+
+	.sauna-processing
+		flex-direction: column
+
+		&__img
+			margin: 20px 0 0 0
+
+	.sauna-processing-cont, .sauna-elements-cont, .saune-light-cont
+		margin: 35px 0
+
+	
+	.saune-light
+		&__list
+			flex-direction: column
+
+		&__item
+			width: 100% !important
+			&:not(:last-child)
+				margin-bottom: 30px
+
+	.sauna-elements__text
+		margin-top: 15px

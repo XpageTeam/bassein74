@@ -1,0 +1,146 @@
+html
+	head
+		meta(charset="utf-8")
+		title Сауна
+		include inc/head.jade
+		include inc/css.jade
+	body.inner.page-composite-pools
+		#page-wr
+			#content
+				//- include inc/header.jade
+				.basseins-
+					.header-composite__cont
+						.wrapper
+							.header-composite
+								.content__logo
+									a(href='/')
+										img(src='img/logo-composite-white.svg', alt='bassein74.ru')
+								.nav
+									ul
+										li.active
+											a(href='/composite-pools/') Бассейны композитные
+										li 
+											a(href='/concrete-pools/') Бассейны бетонные
+										li 
+											a(href='/services/') Сервис
+										li 
+											a(href='/portfolio/') Наши работы
+								.header-composite__phone
+									a(href='tel:+73512207787') +7 (351) 220-77-87
+								a.menu-__block_btn.index-page.fancybox(href='#php_form_call_modal') Заказать звонок
+								.menu
+									.menu__text меню
+									.burger
+										span
+					.basseins-__banner
+						img(src='img/photos/sauna-banner.jpg', alt='Композитные басссейны')
+						.basseins-__title
+							.wrapper
+								.basseins__intro
+									.basseins__intro-title
+										h1 САУНА В НОВОМ СВЕТЕ
+									.basseins__intro-text
+										.text-page Сауна – это впечатляющее помещение, где мы проводим время и расслабляемся.<br> Сауна способна доставить нам подлинное наслаждение.
+										a.btn.fancybox(href='#feedback_pool_modal') Оставить заявку
+				.sauna
+					.sauna-top-cont
+						.wrapper
+							.sauna-top
+								.sauna-top__info
+									.sauna-top__sticky
+										.sauna-title TAIVE®
+										.sauna-top__text
+											.text-page
+												p Ассортимент TAIVE® предлагает Вам решения для полноценного оформления интерьера саун и банных отделений. Мягкий обтекаемый дизайн способствует созданию гармоничной атмосферы как в сауне, так и в других помещениях банного отделения. Освещение CARIITTI красиво подчеркивает поверхности и линии интерьера. Интерьер TAIVE® – это классический и долговечный выбор, он оставит незабываемые впечатления от парения в сауне как Вам, так и Вашим гостям.
+								.sauna-photos
+									.sauna-photos--right
+										img(src="img/photos/saunatop-img1.jpg", alt="")
+									.sauna-photos--left
+										img(src="img/photos/saunatop-img2.jpg", alt="")
+
+					.sauna-history-cont
+						.wrapper
+							.sauna-history
+								.sauna-history__img
+									img(src="img/photos/saunatop-img3.jpg", alt="")
+
+								.sauna-history__info
+									.sauna-title К ИСТОРИИ – С УВАЖЕНИЕМ
+
+									.sauna-history__text
+										.text-page
+											p Первые финские сауны строились тысячи лет назад, и по осторожным оценкам, в настоящее время в Финляндии насчитывается около 3,2 миллионов саун. Парение в сауне является частью жизни людей в будни и в праздники, и традиции парения в сауне передаются из поколения в поколение как проведение общего досуга. Мы здесь говорим о значительной и всем известной форме финского нематериального культурного наследия, которое сохранилось практически неизменным в ходе перемен в обществе и развития технологий.
+
+					.sauna-standart-cont
+						.wrapper
+							.sauna-standart
+								.sauna-title СТАНДАРТНЫЕ ЭЛЕМЕНТЫ TAIVE®
+								.sauna-standart__list
+									each elements, i in [{title: 'КАРКАС ДЛЯ ПОЛКОВ', text: 'Изготовлен из березовой фанеры толщиной 20 мм. Каркас поставляется в разобранном виде. Сборка элементов легко и быстро сделать. 4 шт.опор с винтами включены в комплект.'}, {title: 'ЭЛЕМЕНТ ДЛЯ СИДЕНЬЯ / ПОЛКОВ', text: 'Монтируется прямо на каркас TAIVE®. Поверхность – шпон из европейского дуба, каркас из березового многослойного шпона.'}, {title: 'УГЛОВАЯ ЧАСТЬ СИДЕНЬЯ, правая или левая', text: 'Готовый угловой элемент, который подходит для монтажа рядом с прямым элементом сиденья. Имеются правая и левая версия.'}, {title: 'ЭЛЕМЕНТ ПОДСПИННИКА', text: 'Готовый к монтажу элемент подспинника. В комплект включается принадлежности для монтажа и опоры для подспинника. На настенной опоре имеется место для светильника CARIITTI Sauna Linear. '}, {title: 'ПРОМЕЖУТОЧНАЯ ПАНЕЛЬ МЕЖДУ ПОЛКАМИ', text: 'С помощью панели можно закрыть вид под полки и препятствовать падение товаров на пол. '}, {title: 'НАСТЕННАЯ ПАНЕЛЬ ', text: 'Видная поверхность 2400 x 280 мм и толщина панели 10 мм. Все четыре стороны со шпунтом. Поверхность – шпон из европейского дуба, каркас из березового многослойного шпона. Панель обработана для применения в сауне, но она применима и в других помещениях.'}, {title: 'СКАМЕЙКА', text: 'Размеры стандартной модели с одной ступенью 800х500х350 мм. Поверхность – шпон из европейского дуба, каркас из березового многослойного шпона.'}, {title: 'РУЧКА ДЛЯ ДВЕРИ', text: 'Дизайн ручки по форме полка. Длина ручки 545 мм. Крепление на середине. Поверхность – шпон из европейского дуба, каркас из березового многослойного шпона.'}, {title: 'ПОДГОЛОВНИК', text: 'Дизайн по форме подспинника. Размеры 300 x 300 x 70 мм. Поверхность – шпон из европейского дуба, каркас из березового многослойного шпона.'}]
+										a(href="").sauna-standart__item
+											.sauna-standart__item-img
+												img(src="img/photos/st-"+i+".jpg", alt="")
+											.sauna-standart__item-title=elements.title
+											.sauna-standart__item-text=elements.text
+					.sauna-processing-cont
+						.wrapper
+							.sauna-processing
+								.sauna-processing__info
+									.sauna-title ОБРАБОТКА ПОВЕРХНОСТИ ПО ЖЕЛАНИЮ КЛИЕНТА
+									.sauna-processing__text 
+										.text-page
+											p Стандартные элементы поставляются без обработки поверхности. Рекомендуем обрабатывать поверхности защитным составом для бани, так как обработка защищает поверхность от влаги и прежде всего от грязи, и обработанные поверхности проще чистить. Обработку воском следует повторять минимум 2 раза в год, в зависимости от износа поверхности, следуя при этом рекомендациям производителя воска.
+								.sauna-processing__img
+									img(src="img/photos/sauna-processing-img.jpg", alt="")
+
+					.sauna-colors-cont
+						.wrapper
+							.sauna-colors
+								.sauna-colors__text 
+									.text-page
+										p Выбор готовых оттенков Supi Sauna Wax фирмы Тиккурила, используемых Cariitti:
+
+								.sauna-colors__bot
+									img(src="img/sauna-colors.jpg", alt="")
+					.saune-light-cont
+						.wrapper
+							.saune-light
+								.sauna-title ОСВЕЩЕНИЕ
+								.saune-light__list
+									.saune-light__item
+										.saune-light__item-img
+											img(src="img/photos/saune-light-1.jpg", alt="")
+										.saune-light__item-text
+											.text-page
+												p Для более подробной информации об освещении, см. www.cariitti.com
+									.saune-light__item
+										.saune-light__item-img
+											img(src="img/photos/saune-light-2.jpg", alt="")
+										.saune-light__item-text
+											.text-page
+												p На настенных опорах подспинника имеется место для светильника CARIITTI Sauna Linear. 
+												p На снимке за подспинником 2 шт. светильника CARIITTI Sauna Linear LED 2 M, арт. 1516661, и под полком один светильник CARIITTI Sauna Linear LED 2 M для освещения нижнего полка. На потолке использован CARIITTI Sauna Linear Glass, арт. 1545844, который освещен комплектом VPAC-1527-N221, арт. 1516707. При использовании промежуточной панели светильник CARIITTI Sauna Linear можно монтировать на передний край каркаса верхнего полка.
+					.sauna-standart-cont
+						.wrapper
+							.sauna-standart
+
+								.sauna-title СТАНДАРТНЫЕ ЭЛЕМЕНТЫ TAIVE®
+								.sauna-standart__list
+									each elements, i in [{title: 'КАРКАС ДЛЯ ВЕРХНИХ ПОЛКОВ', text: '2 х арт. 1603100'}, {title: 'ПОДСПИННИК', text: '5 х арт. 1603104'}, {title: 'КАРКАС ДЛЯ НИЖНИХ ПОЛКОВ', text: '2 х арт. 1603100'}, {title: 'ЭЛЕМЕНТ СИДЕНИЯ', text: '3 х арт. 1603101 и 1 х арт. 1603102; промежуточная панель 4 х арт. 1603105'}, {title: 'ЭЛЕМЕНТ СИДЕНИЯ', text: '2 х арт. 1603101 и 1603103'}, {title: 'СКАЙМЕЙКА', text: '1 х арт. 1603107'}]
+										a(href="").sauna-standart__item
+											.sauna-standart__item-img
+												img(src="img/photos/stk-"+i+".jpg", alt="")
+											.sauna-standart__item-title=elements.title
+											.sauna-standart__item-text=elements.text
+					.sauna-elements-cont
+						.wrapper
+							.sauna-elements 
+								.sauna-title ЭЛЕМЕНТЫ TAIVE®
+								.sauna-elements__img
+									img(src="img/photos/sauna-el.jpg", alt="")
+								.sauna-elements__text 
+									.text-page
+										p За подспинниками и под полками CARIITTI Sauna Linear LED 2 М, арт. 1516661, 6 шт. На потолке CARIITTI Sauna Linear Glass , арт. 1545844, 3 шт. и CARIITTI VPAC-1527-F335, арт. 1516702
+
+			include inc/footer.jade
+		include inc/scripts.jade
